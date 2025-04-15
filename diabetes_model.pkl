@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyM7rxmxwUhGDFeoB1F/hGnk",
+      "authorship_tag": "ABX9TyPlXWhI1bBq/ZrLVjGVmKdw",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -382,6 +382,22 @@
         "id": "Maesy_aeQ3ft"
       },
       "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Assuming your trained model is stored in a variable called `model`\n",
+        "import pickle\n",
+        "\n",
+        "# Save it with protocol=4 for compatibility\n",
+        "with open(\"diabetes_model.pkl\", \"wb\") as file:\n",
+        "    pickle.dump(model, file, protocol=4)"
+      ],
+      "metadata": {
+        "id": "gxmwsS7mqSUa"
+      },
+      "execution_count": 6,
       "outputs": []
     }
   ]
